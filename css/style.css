@@ -1,16 +1,63 @@
 * {
     box-sizing: border-box;
 }
-/*Typography*/
-h1{font-size: 5em;}
 
-h2{font-size: 3.5em;}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+/*Elements*/
+header{
+	margin-top: 1em;
+	width:100%;
+	text-align: center;
+	position: absolute;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0;
+}
+
+nav li{
+	display: inline-block;
+}
+
+nav a{
+	font-weight: 900;
+	text-decoration: none;
+	font-size: 0.8em;
+	color:#fff;
+	padding: 1.5em;
+}
+
+.top-page{
+	text-align: center;
+	padding: 8em 0;
+	background-image: url('https://www.infolinkbd.com/wp-content/uploads/2016/07/tech-background-image-2.jpg');
+}
+
+.top-page h1{
+	margin-top:1em;
+}
+.top-page h2{
+	margin-top:1em;
+	margin-bottom: 2em;
+}
+
+/*Typography*/
+h1{font-size: 2.5em;margin: 0;}
+
+h2{font-size: 1.5em;margin: 0;}
 
 .danger{color:#f33;	font-weight: bold;}
 
 .success{color:#2a2;}
 
 .white{color:#fff;}
+
+.title{
+	text-align: center;
+}
 
 .bg-danger{
 	background-color:#f33;
@@ -24,6 +71,16 @@ h2{font-size: 3.5em;}
 	background-color: #28e;
 }
 
+.btn{
+	text-decoration: none;
+	padding: 0.7em 2em;
+}
+
+.btn-orange{
+	border:2px solid #ff4300;
+	padding: 0.7em 2em;
+	color:#ff4300;
+}
 
 /*Grid system*/
 .row{
@@ -42,7 +99,7 @@ h2{font-size: 3.5em;}
 	width: 100%;
 	float: left;
     padding: 10px 15px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 @media only screen and (min-width: 600px) {
