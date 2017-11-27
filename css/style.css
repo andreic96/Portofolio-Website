@@ -33,7 +33,7 @@ nav a{
 .top-page{
 	text-align: center;
 	padding: 8em 0;
-	background-image: url('https://www.infolinkbd.com/wp-content/uploads/2016/07/tech-background-image-2.jpg');
+	background-image: url('../img/bg-cover.jpeg');
 }
 
 .top-page h1{
@@ -44,10 +44,69 @@ nav a{
 	margin-bottom: 2em;
 }
 
-/*Typography*/
-h1{font-size: 2.5em;margin: 0;}
+.about-container{
+	position: relative;
+/*	background-color: #dedede;*/
+}
 
-h2{font-size: 1.5em;margin: 0;}
+.about{
+	width: 100%;
+	padding: 2em 3em !important;
+	outline: 2px solid #ff4300;
+	outline-offset: -1.5em;
+	background-color: #232323;
+	color: white;
+}
+
+.about .title{
+	background-color: #fff;
+	position: absolute;
+	padding:0 0.7em;
+	top:0.5em;
+	left:50%;
+	transform: translateX(-50%);
+	background: #232323;
+	color:#ff4300;
+}
+
+.work-container .row{
+	border:3px solid #000;
+	margin: 20px;
+}
+
+.work-container .row h1{
+	text-align: center;
+}
+
+.work-description p{
+	line-height: 1.4em;
+}
+
+footer{
+	border-top:1px solid #ddd;
+	margin: 1em !important;
+	background-color: #ddd;
+}
+
+footer ul{
+	list-style: none;
+	line-height: 2em;
+	padding: 0;
+}
+
+footer a{
+	text-decoration: none;
+	color:black;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+/*Typography*/
+h1{font-size: 2.5em;margin: 0;padding: 10px;}
+
+h2{font-size: 1.5em;margin: 0;padding: 7px;}
+
+.text-center{text-align: center;}
 
 .danger{color:#f33;	font-weight: bold;}
 
@@ -82,6 +141,17 @@ h2{font-size: 1.5em;margin: 0;}
 	color:#ff4300;
 }
 
+.btn-orange:active,
+.btn-orange:hover{
+	background-color: #ff4300;
+	color:#fff;
+}
+
+.img-responsive{
+	max-width:100%;
+	height: auto;
+}
+
 /*Grid system*/
 .row{
 	clear: both;
@@ -103,6 +173,19 @@ h2{font-size: 1.5em;margin: 0;}
 }
 
 @media only screen and (min-width: 600px) {
+	.about{
+		width: 50%;	
+		height: 50%;	
+	}
+
+	.about .title{
+		left:25%;
+	}
+
+	.work-container .row h1{
+		text-align: left;
+	}
+
 	/* For tablets: */
 	.col-tb-1 {width: 8.33%;}
 	.col-tb-2 {width: 16.66%;}
