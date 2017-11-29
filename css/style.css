@@ -420,35 +420,116 @@ h2{font-size: 1.5em;margin: 0;padding: 7px;}
 		width:100%;
 	}
 
-	nav{
-		float: right;
-		padding: 1em;
-		margin-right: 2em;
-	}
-
 	header img{
 		margin-top: 1em;
 		padding-left:1.5em;
 	}
 
-	nav li{
-		display: inline;
-		padding: 1em;
+	header ul{
+		list-style: none;
+		padding: 0;
+		line-height: 3em;
 	}
 
+	header
+	{
+	  display: block;
+	  z-index: 1;
+	  user-select: none;
+	}
 
-	nav a{
+	header input
+	{
+		display: block;
+		margin-left: 89%;
+		top:3em;
+		width: 42px;
+		height: 32px;
+		position: absolute;
+		cursor: pointer;
+		opacity: 0; 
+		z-index: 2;
+	}
+
+	header span{
+		display: block;
+		width: 33px;
+		height: 4px;
+		margin-bottom: 5px;
+		margin-left: 90%;
+		top:-3em;
+		position: relative;
+		background: #cdcdcd;
+		border-radius: 3px;
+		z-index: 1;
+		transform-origin: 4px 0px;
+		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+		          background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+		          opacity 0.55s ease;
+	}
+
+	header span:first-child
+	{
+		transform-origin: 0% 0%;
+	}
+
+	header span:nth-last-child(2)
+	{
+		transform-origin: 0% 100%;
+	}
+	header input:checked ~ span
+	{
+		opacity: 1;
+		transform: rotate(45deg) translate(-2px, -1px);
+		background: #232323;
+	}
+
+	header input:checked ~ span:nth-last-child(3)
+	{
+		opacity: 0;
+		transform: rotate(0deg) scale(0.2, 0.2);
+	}
+
+	header input:checked ~ span:nth-last-child(2)
+	{
+		transform: rotate(-45deg) translate(0, -1px);
+	}
+
+	nav
+	{
+		text-align: center;
+		position: absolute;
+		width: 100%;
+		height: -webkit-fill-available;
+		height: -moz-fit-content;
+		margin: -9em 0;
+		padding:50% 0;
+		background: #ededed;
+		list-style-type: none;
+
+		transform-origin: 0% 0%;
+		transform: translate(-100%, 0);
+		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+	}
+
+	nav li
+	{
+	  padding: 10px 10px;
+	  font-size: 22px;
+	}
+
+	nav li a{
 		text-decoration: none;
-		font-size: 1.6em;
-		color:#fff;
+		color:#000;
 	}
 
-	nav a:hover{
-		color:#ff4300;
+	header input:checked ~ nav
+	{
+	 	transform: none;
 	}
 
-	header input{
-		display: none;
+	.about p{
+		font-size: 1.2em;
 	}
 }
 
@@ -512,5 +593,9 @@ h2{font-size: 1.5em;margin: 0;padding: 7px;}
 
 	header input{
 		display: none;
+	}
+
+	.about .title {
+    	left: 28%;
 	}
 }
