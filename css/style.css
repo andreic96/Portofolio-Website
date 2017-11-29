@@ -403,6 +403,53 @@ h2{font-size: 1.5em;margin: 0;padding: 7px;}
 	.col-tb-10 {width: 83.33%;}
 	.col-tb-11 {width: 91.66%;}
 	.col-tb-12 {width: 100%;}
+
+	/*Typography*/
+	h1{font-size: 2.5em;}
+
+	h2{font-size: 1.5em;}
+
+
+	.work-container{
+		width: 70%;
+		margin:0 auto;
+	}
+
+	header{
+		position: absolute;
+		width:100%;
+	}
+
+	nav{
+		float: right;
+		padding: 1em;
+		margin-right: 2em;
+	}
+
+	header img{
+		margin-top: 1em;
+		padding-left:1.5em;
+	}
+
+	nav li{
+		display: inline;
+		padding: 1em;
+	}
+
+
+	nav a{
+		text-decoration: none;
+		font-size: 1.6em;
+		color:#fff;
+	}
+
+	nav a:hover{
+		color:#ff4300;
+	}
+
+	header input{
+		display: none;
+	}
 }
 
 @media only screen and (min-width: 1280px) {
